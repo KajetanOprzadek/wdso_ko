@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Kulturystyka i siłownia - Strona główna</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+
+</head>
+<body>
+  <header>
+    <h1>Kulturystyka i siłownia</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Strona główna</a></li>
+        <li><a href="trening.html">Trening</a></li>
+        <li><a href="zywienie.html">Żywienie</a></li>
+        <li><a href="suplementacja.html">Suplementacja</a></li>
+        <li><a href="porady.html">Porady</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Witaj na stronie głównej!</h2>
+    <section>
+        <form id="bmi-form">
+          <div>
+            <h2>Oblicz BMI</h2>
+            <label for="weight">Waga (kg):</label>
+            <input type="number" id="weight" required>
+          </div>
+          <div>
+            <label for="height">Wzrost (cm):</label>
+            <input type="number" id="height" required>
+          </div>
+          <div>
+            <button type="submit">Oblicz BMI</button>
+          </div>
+        </form>
+        <div id="result"></div>
+      </section>
+    <section>
+      <div class="slideshow-container">
+        <div class="slide">
+          <img src="zdjecie1.jpg" alt="Zdjęcie 1">
+        </div>
+        <div class="slide">
+          <img src="zdjecie2.jpg" alt="Zdjęcie 2">
+        </div>
+        <div class="slide">
+          <img src="zdjecie3.jpg" alt="Zdjęcie 3">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Aktualna data i czas: <span id="date-time"></span></p>
+    <script src="date-time.js"></script>
+    <p>Strona stworzona przez L1 166786</p>
+  </footer>
+  <script src="bmi.js"></script>
+  <script src="slider.js"></script>
+   <script src="scroll-to-top.js"></script>
+
+
+</body>
+</html>

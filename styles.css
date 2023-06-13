@@ -1,0 +1,283 @@
+/* Ogólne style strony */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+header, main, footer {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #666;
+}
+
+/* Styl dla sekcji na podstronach */
+section {
+  margin-bottom: 20px;
+}
+
+/* Styl dla listy treningowej */
+.training-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.training-list li {
+  margin-bottom: 10px;
+}
+
+.training-list li strong {
+  font-weight: bold;
+}
+
+.training-list li p {
+  margin: 5px 0;
+}
+
+/* Styl dla listy dotyczącej żywienia */
+.nutrition-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nutrition-list li {
+  margin-bottom: 10px;
+}
+
+.nutrition-list li strong {
+  font-weight: bold;
+}
+
+.nutrition-list li p {
+  margin: 5px 0;
+}
+
+/* Styl dla stopki */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Styl dla galerii zdjęć */
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+/* Styl dla formularza BMI */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="number"] {
+  width: 100px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#result {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Styl dla listy suplementów */
+.supplements-list {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.supplements-list li {
+  margin-bottom: 5px;
+}
+
+/* Styl dla przycisku scroll-to-top */
+.scroll-to-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 120px;
+  height: 40px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.scroll-to-top-button:hover {
+  background-color: #666;
+}
+
+/* Styl dla listy porad */
+.tips-list {
+  list-style-type: none;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tip-item {
+  margin-bottom: 20px;
+}
+
+.tips-list .tip-image {
+  width: 20%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Stylizacja sekcji Suplementacja */
+#supplement-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#supplement-container div {
+  flex-basis: calc(20% - 20px);
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#supplement-container h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#supplement-container img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+#supplement-container p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#navigation-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#navigation-buttons button {
+  margin: 0 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#navigation-buttons button:hover {
+  background-color: #45a049;
+}
+
+/* Nowe style dla sekcji Suplementacja */
+#supplement-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Wyśrodkowanie elementów */
+  margin-bottom: 20px;
+}
+
+#supplement-container div {
+  flex-basis: calc(20% - 20px);
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#supplement-container h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#supplement-container img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+#supplement-container p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#remember {
+  text-align: center;
+  color: red;
+}
+
+.muscle-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+.muscle-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.exercises {
+  display: none;
+}
